@@ -1,0 +1,198 @@
+:root {
+	--bg-ccolor: #0f172a;
+	--text-ccolor: #cbd5e1;
+	--title-color: #f8fafc;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Regular.woff2') format('woff2'), url('../fonts/Roboto-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Medium.woff2') format('woff2'), url('../fonts/Roboto-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto';
+	src: url('../fonts/Roboto-Bold.woff2') format('woff2'), url('../fonts/Roboto-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 2rem;
+	background-color: var(--bg-ccolor);
+	line-height: 1.2;
+}
+
+:focus {
+	outline: 2px dashed var(--text-ccolor);
+	outline-offset: 3px;
+}
+
+.container {
+	max-width: 1190px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin-top: 0px;
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.site-header {
+	padding-top: 3.4rem;
+	padding-bottom: 3.4rem;
+}
+
+.site-header__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+	width: 210px;
+	height: 44px;
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+}
+
+.nav__item:not(:last-child) {
+	margin-right: 4rem;
+}
+
+.nav__link {
+	font-weight: 700;
+	font-size: 2.4rem;
+	line-height: 1.2;
+	color: var(--title-color);
+	transition: opacity 0.4s ease;
+}
+
+.nav__link:hover {
+	opacity: 0.8;
+}
+
+.nav__link:active {
+	opacity: 0.6;
+}
+
+/* MEDIA QUARY */
+@media screen and (max-width: 992px) {
+	.site-header {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+	.nav__item:not(:last-child) {
+		margin-right: 3.6rem;
+	}
+
+	.nav__link {
+		font-size: 2rem;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.site-header {
+		padding-top: 2.4rem;
+		padding-bottom: 2.4rem;
+	}
+
+	.logo {
+		width: 180px;
+		height: 40px;
+	}
+
+	.logo img {
+		width: 180px;
+		height: 40px;
+	}
+
+	.nav__item:not(:last-child) {
+		margin-right: 2.4rem;
+	}
+
+	.nav__link {
+		font-size: 1.8rem;
+	}
+}
+
+@media screen and (max-width: 520px) {
+	.site-header {
+		padding-top: 1.2rem;
+		padding-bottom: 1.2rem;
+	}
+
+	.logo {
+		width: 120px;
+		height: 30px;
+	}
+
+	.logo img {
+		width: 120px;
+		height: 30px;
+	}
+
+	.nav__item:not(:last-child) {
+		margin-right: 1rem;
+	}
+
+	.nav__link {
+		font-size: 1.4rem;
+	}
+}
+
+@media screen and (max-width: 420px) {
+	.nav__link {
+		font-size: 1rem;
+	}
+}
