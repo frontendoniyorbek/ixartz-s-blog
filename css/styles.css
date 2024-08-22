@@ -182,6 +182,92 @@ a {
 	object-fit: cover;
 }
 
+.recent-project {
+	padding-bottom: 4.2rem;
+	color: var(--text-ccolor);
+}
+
+.recent-project__title {
+	font-weight: 700;
+	font-size: 4.8rem;
+	line-height: 1.2;
+	margin-bottom: 8.2rem;
+}
+
+.recent-project__title span {
+	background: -webkit-linear-gradient(270deg, #22d3ee 13.04%, #0ea5e9 25.67%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.recent-project__list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.recent-project__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background-color: rgba(30, 41, 59, 0.4);
+	padding: 3rem 0.8rem;
+	border-radius: 2rem;
+}
+
+.recent-project__item:not(:last-child) {
+	margin-bottom: 4.2rem;
+}
+
+.recent-project__img {
+	margin-right: 4.4rem;
+}
+
+.recent-project__img img {
+	width: 250px;
+	height: 232px;
+	object-fit: contain;
+}
+
+.recent-project__info {
+	max-width: 840px;
+	width: 100%;
+}
+
+.recent-project__info-top {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2.5rem;
+}
+
+.recent-project__info-title {
+	font-weight: 500;
+	font-size: 3rem;
+	margin-right: 2rem;
+}
+.recent-project__info-btn {
+	border: none;
+	cursor: pointer;
+	padding: 0.8rem;
+	border-radius: 1rem;
+	background: linear-gradient(180deg, rgba(16, 185, 129, 0.2) 0%, rgba(190, 242, 100, 0.2) 100%);
+	color: greenyellow;
+}
+
+.recent-project__info-btn2 {
+	background: linear-gradient(180deg, rgba(220, 38, 38, 0.2) 0%, rgba(249, 115, 22, 0.2) 100%);
+	color: red;
+}
+
+.recent-project__info-btn3 {
+	background: linear-gradient(180deg, rgba(124, 58, 237, 0.2) 0%, rgba(96, 165, 250, 0.2) 100%);
+
+	color: blue;
+}
+.recent-project__info-text {
+}
+
 /* MEDIA QUARY */
 @media screen and (max-width: 992px) {
 	.site-header {
@@ -218,6 +304,36 @@ a {
 
 	.hero__item:not(:last-child) {
 		margin-right: 3rem;
+	}
+
+	.recent-project {
+		padding-bottom: 3.6rem;
+	}
+
+	.recent-project__title {
+		font-size: 4rem;
+		margin-bottom: 8rem;
+	}
+
+	.recent-project__item {
+		padding: 2.8rem 0.8rem;
+	}
+
+	.recent-project__item:not(:last-child) {
+		margin-bottom: 4rem;
+	}
+
+	.recent-project__img {
+		margin-right: 4rem;
+	}
+
+	.recent-project__info-top {
+		margin-bottom: 2rem;
+	}
+
+	.recent-project__info-title {
+		font-size: 2.8rem;
+		margin-right: 1.8rem;
 	}
 }
 
@@ -282,6 +398,49 @@ a {
 	.hero__img {
 		width: 48px;
 		height: 48px;
+	}
+
+	.recent-project {
+		padding-bottom: 3.6rem;
+	}
+
+	.recent-project__title {
+		font-size: 3.6rem;
+		margin-bottom: 5.6rem;
+	}
+
+	.recent-project__item {
+		padding: 2rem 0.8rem;
+	}
+
+	.recent-project__item:not(:last-child) {
+		margin-bottom: 3.6rem;
+	}
+
+	.recent-project__img {
+		margin-right: 3.6rem;
+	}
+
+	.recent-project__info-top {
+		margin-bottom: 1.6rem;
+	}
+
+	.recent-project__info-title {
+		font-size: 2rem;
+		margin-right: 1rem;
+	}
+
+	.recent-project__info-btn {
+		font-size: 1.6rem;
+	}
+
+	.recent-project__img img {
+		width: 200px;
+		height: 180px;
+	}
+
+	.recent-project__info-text {
+		font-size: 1.4rem;
 	}
 }
 
@@ -359,6 +518,52 @@ a {
 		width: 30px;
 		height: 30px;
 	}
+
+	.recent-project__title {
+		font-size: 2.4rem;
+		margin-bottom: 2.8rem;
+	}
+
+	.recent-project__item {
+		padding: 1rem;
+		border-radius: 2rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.recent-project__item:not(:last-child) {
+		margin-bottom: 2.5rem;
+	}
+
+	.recent-project__img {
+		margin-right: 0rem;
+		margin-bottom: 2rem;
+	}
+
+	.recent-project__img img {
+		width: 150px;
+		height: 90px;
+	}
+
+	.recent-project__info-top {
+		margin-bottom: 1.6rem;
+		justify-content: center;
+	}
+
+	.recent-project__info-title {
+		font-size: 1.5rem;
+	}
+
+	.recent-project__info-btn {
+		padding: 0.8em;
+		font-size: 1rem;
+	}
+
+	.recent-project__info-text {
+		font-size: 1rem;
+	}
 }
 
 @media screen and (max-width: 420px) {
@@ -368,5 +573,10 @@ a {
 
 	.hero__text {
 		font-size: 1rem;
+	}
+
+	.recent-project__img img {
+		width: 50px;
+		height: 50px;
 	}
 }
