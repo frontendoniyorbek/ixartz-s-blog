@@ -265,7 +265,41 @@ a {
 
 	color: blue;
 }
-.recent-project__info-text {
+
+/* POSTS */
+.posts {
+	padding-bottom: 9.1em;
+}
+
+.posts__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 8.2rem;
+}
+
+.posts__title {
+	font-weight: 700;
+	font-size: 4.8rem;
+	color: var(--title-color);
+}
+
+.posts__title span {
+	background: -webkit-linear-gradient(270deg, #22d3ee 13.04%, #0ea5e9 25.67%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.posts__link {
+	display: flex;
+	align-items: center;
+	font-weight: 700;
+	font-size: 2rem;
+	color: var(--text-ccolor);
+}
+
+.posts__link img {
+	margin-left: 1.2rem;
 }
 
 /* MEDIA QUARY */
@@ -334,6 +368,26 @@ a {
 	.recent-project__info-title {
 		font-size: 2.8rem;
 		margin-right: 1.8rem;
+	}
+
+	.posts {
+		padding-bottom: 8em;
+	}
+
+	.posts__top {
+		margin-bottom: 7.5rem;
+	}
+
+	.posts__title {
+		font-size: 4rem;
+	}
+
+	.posts__link {
+		font-size: 1.8rem;
+	}
+
+	.posts__link img {
+		margin-left: 1.2rem;
 	}
 }
 
@@ -441,6 +495,31 @@ a {
 
 	.recent-project__info-text {
 		font-size: 1.4rem;
+	}
+
+	.posts {
+		padding-bottom: 6em;
+	}
+
+	.posts__top {
+		margin-bottom: 6rem;
+	}
+
+	.posts__title {
+		font-size: 3rem;
+	}
+
+	.posts__link {
+		font-size: 1.6rem;
+	}
+
+	.posts__link img {
+		margin-left: 1rem;
+	}
+
+	.posts__link img {
+		width: 30px;
+		height: 30px;
 	}
 }
 
@@ -563,6 +642,29 @@ a {
 
 	.recent-project__info-text {
 		font-size: 1rem;
+	}
+
+	.posts {
+		padding-bottom: 4.2em;
+	}
+
+	.posts__top {
+		margin-bottom: 3rem;
+	}
+
+	.posts__title {
+		font-size: 2rem;
+	}
+
+	.posts__link {
+		font-size: 1.2rem;
+	}
+
+	.posts__link img {
+		margin-left: 0rem;
+		width: 20px;
+		height: 20px;
+		object-fit: cover;
 	}
 }
 
