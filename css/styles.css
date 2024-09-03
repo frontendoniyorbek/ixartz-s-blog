@@ -1,7 +1,8 @@
 :root {
-	--bg-ccolor: #0f172a;
-	--text-ccolor: #cbd5e1;
+	--bg-color: #0f172a;
+	--text-color: #cbd5e1;
 	--title-color: #f8fafc;
+	--bg-color2: #1e293b;
 }
 
 @font-face {
@@ -44,12 +45,12 @@ body {
 	font-family: 'Roboto', sans-serif;
 	font-weight: 400;
 	font-size: 2rem;
-	background-color: var(--bg-ccolor);
+	background-color: var(--bg-color);
 	line-height: 1.2;
 }
 
 :focus {
-	outline: 2px dashed var(--text-ccolor);
+	outline: 2px dashed var(--text-color);
 	outline-offset: 3px;
 }
 
@@ -144,7 +145,7 @@ a {
 .hero__info {
 	max-width: 713px;
 	width: 100%;
-	color: var(--text-ccolor);
+	color: var(--text-color);
 }
 
 .hero__title {
@@ -184,7 +185,7 @@ a {
 
 .recent-project {
 	padding-bottom: 4.2rem;
-	color: var(--text-ccolor);
+	color: var(--text-color);
 }
 
 .recent-project__title {
@@ -295,7 +296,7 @@ a {
 	align-items: center;
 	font-weight: 700;
 	font-size: 2rem;
-	color: var(--text-ccolor);
+	color: var(--text-color);
 }
 
 .posts__link img {
@@ -314,7 +315,7 @@ a {
 	color: var(--title-color);
 	border-radius: 2rem;
 	box-shadow: 0px 4px 10px 0px #0000001a;
-	background-color: #1e293b;
+	background-color: var(--bg-color2);
 }
 
 .posts__item:not(:last-child) {
@@ -341,6 +342,69 @@ a {
 	display: block;
 	opacity: 0.6;
 	margin-bottom: 1rem;
+}
+
+/* newsletters */
+
+.newsletters__container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.newsletters__info {
+	max-width: 549px;
+	width: 100%;
+	color: var(--text-color);
+	margin-right: 2rem;
+}
+
+.newsletters__title {
+	font-size: 4.8rem;
+	font-weight: 500;
+	margin-bottom: 3.3rem;
+}
+
+.newsletters__title span {
+	background: -webkit-linear-gradient(270deg, #22d3ee 13.04%, #0ea5e9 25.67%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.form {
+	display: flex;
+	align-items: center;
+	max-width: 522px;
+	width: 100%;
+	background-color: var(--bg-color2);
+	border-radius: 3rem;
+	padding-right: 1.7rem;
+}
+
+.form__input {
+	width: 100%;
+	background-color: transparent;
+	padding-top: 2.3rem;
+	padding-bottom: 2.3rem;
+	padding-left: 4.2rem;
+	outline-color: var(--bg-color2);
+	border: none;
+	border-radius: 3rem;
+	color: var(--text-color);
+}
+
+.form__input::placeholder {
+	color: var(--text-color);
+}
+
+.form__btn {
+	border: none;
+	padding: 1.2rem 3.6rem;
+	border-radius: 3rem;
+	background: linear-gradient(270deg, #22d3ee 50%, #0ea5e9 100%);
+	cursor: pointer;
+	font-size: 2rem;
+	font-weight: 700;
 }
 
 /* MEDIA QUARY */
@@ -459,6 +523,24 @@ a {
 
 	.posts__item-text span {
 		margin-bottom: 1rem;
+	}
+
+	.newsletters__title {
+		font-size: 4rem;
+	}
+
+	.form__input {
+		padding-top: 2rem;
+		padding-bottom: 2rem;
+		padding-left: 4rem;
+	}
+
+	.form__input::placeholder {
+		color: var(--text-color);
+	}
+
+	.form__btn {
+		padding: 1rem 3rem;
 	}
 }
 
@@ -610,6 +692,22 @@ a {
 
 	.posts__item-text {
 		font-size: 1.2rem;
+	}
+
+	.newsletters__container {
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.newsletters__info {
+		margin-bottom: 3rem;
+		margin-right: 0;
+		text-align: center;
+	}
+
+	.newsletters__title {
+		font-size: 3rem;
+		margin-bottom: 2rem;
 	}
 }
 
@@ -765,6 +863,36 @@ a {
 		width: 100%;
 		height: auto;
 		object-fit: contain;
+	}
+
+	.newsletters__info {
+		margin-bottom: 1.5rem;
+	}
+
+	.newsletters__title {
+		font-size: 2rem;
+	}
+
+	.newsletters__text {
+		font-size: 1rem;
+	}
+
+	.form {
+		padding-right: 0.6rem;
+	}
+
+	.form__input::placeholder {
+		font-size: 1.2rem;
+	}
+
+	.form__input {
+		font-size: 1.2rem;
+		padding: 1.2rem 0 0.9rem 1.9rem;
+	}
+
+	.form__btn {
+		font-size: 1.2rem;
+		padding: 1rem 2rem;
 	}
 }
 
